@@ -6,7 +6,7 @@ class FormularioInsercao extends ControlerComHtml implements InterfaceControlado
 {
     public function processaRequisicao(): void
     {
-        $this->renderizaHtml('cursos/formulario.php', [
+        echo $this->renderizaHtml('cursos/formulario.php', [
             'titulo' => 'Novo Curso',
         ]);
     }

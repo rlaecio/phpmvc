@@ -21,7 +21,7 @@ class ListarCursos extends ControlerComHtml implements InterfaceControladorRequi
     public function processaRequisicao(): void
     {
         $cursos = $this->repositorioDeCursos->findAll();
-        $this->renderizaHtml('cursos/listar-cursos.php', [
+        echo $this->renderizaHtml('cursos/listar-cursos.php', [
             'cursos' => $cursos,
             'titulo' => 'Listar Cursos',
         ]);

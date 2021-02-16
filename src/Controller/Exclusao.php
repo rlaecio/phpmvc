@@ -29,7 +29,7 @@ class Exclusao implements InterfaceControladorRequisicao
         );
 
         if (is_null($id) || $id === false) {
-            $this->defineMensagem('danger','urso inexistente');
+            $this->defineMensagem('danger','Curso inexistente');
             
             header('Location: /listar-cursos');
             return;

@@ -6,7 +6,6 @@ use Alura\Cursos\Infra\EntityManagerCreator;
 
 
 $containerBuilder = new ContainerBuilder();
-
 $containerBuilder->addDefinitions([
     EntityManagerInterface::class => function () {
         return (new EntityManagerCreator())->getEntityManager();
